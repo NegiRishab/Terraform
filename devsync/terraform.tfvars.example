@@ -1,0 +1,15 @@
+aws_region         = "ap-south-1"
+project_name       = "devsync"
+environment        = "practice"
+vpc_cidr           = "10.0.0.0/16"
+public_subnet_cidr = "10.0.1.0/24"
+
+# Replace with your current public IPv4 address followed by /32.
+admin_cidr = "203.0.113.10/32"
+
+# Replace with the name of an existing EC2 key pair in ap-south-1.
+key_name = "replace-with-existing-key-pair-name"
+
+# Small instances reduce cost but may be constrained for Jenkins and a multi-container application.
+jenkins_instance_type = "t3.small"
+app_instance_type     = "t3.small"
